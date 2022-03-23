@@ -44,6 +44,9 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
     display:flex;
     flex-direction: column;
 }
+.main{
+    flex: 1 1 auto;
+}
 .header {
 }
 .header__row {
@@ -83,16 +86,15 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
     color: #FFFFFF;
     align-self: center;   
 }
-.navigation {
+.navigation, .footer {
     background-color: #0076A8;
     width: 100%;
-
 }
 .navigation__row {
     display:flex;
     justify-content: space-between;
 }
-.navigation__button {
+.navigation__button, .footer__button {
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
@@ -100,6 +102,89 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
     color: #FFFFFF;
     margin: 25px 0;
 }
-.navigation__button:hover ,.button__text:hover{
+.navigation__button:hover ,.button__text:hover, .footer__button:hover, .info__button_price:hover,.info__button_call:hover {
     text-decoration: solid underline 2px;
+}
+
+.footer__row {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1441px;
+    margin: 0 auto;
+}
+.image__footer:first-child {
+    margin: 12px 0 22px 40px;
+}
+.image__footer:last-child{
+    margin: 25px 50px 34px 0px;
+}
+.information {
+    min-width: 60%;
+    margin: 0 0 62px 0;
+}
+
+.information__text{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    max-width:60%; 
+}
+.info__text_1 {
+    font-size: 40px;
+    line-height: 52px;
+    color: #272727;
+    margin: 110px 0px 82px 0px;
+}
+.info__text_1 p:first-child{
+    font-weight: 600;
+}
+.info__text_1 p:last-child{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    color: #FFFFFF;
+    background-color: #D75A00;
+    padding: 8px 13px;
+}
+.info__text_2 {
+    font-size: 24px;
+    line-height: 28px;
+    color: #272727;
+    margin: 0px 0 31px 0;
+}
+.info__button{
+    margin:
+}
+.info__button_price {
+    background-color: #D75A00;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 31px 0 0;
+    padding: 24px 35px;
+}
+
+.info__button_call {
+    background: #FFFFFF;
+    border: 4px solid #FF6B00;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: #FF6B00;
+    padding: 20px 46px;
+}
+
+.button__flex{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
 }
