@@ -17,7 +17,7 @@
             <div class="container">
                 <div class="header__row">
                     <div class="image__header">
-                        <img src="/img/icons/логотип.png" alt="">
+                        <img src="img/icons/логотип.png" alt="">
                     </div>
                     <div class="header__text">
                         <p>город Самара</p>
@@ -32,7 +32,7 @@
                         <p>8 800 956 56 56</p>
                     </div>
                     <div class="button">
-                        <a href="" class="button__text">заказать звонок</a>
+                        <a href="#call" class="button__text">заказать звонок</a>
                     </div>
                 </div>
             </div>    
@@ -43,11 +43,11 @@
                     <div class="navigation__row">
                         <a href="" class="navigation__button">Ремонт компьютеров</a>
                         <a href="" class="navigation__button">Ремонт ноутбуков</a>
-                        <a href="" class="navigation__button">прайс</a>
+                        <a href="#price" class="navigation__button">прайс</a>
                         <a href="" class="navigation__button">о частном мастере</a>
-                        <a href="" class="navigation__button">отзывы</a>
+                        <a href="#review" class="navigation__button">отзывы</a>
                         <a href="" class="navigation__button">статьи</a>
-                        <a href="" class="navigation__button">контакты</a>
+                        <a href="#contacts" class="navigation__button">контакты</a>
                         <a href="" class="navigation__button">карта сайта</a>
                     </div>
                 </div>
@@ -69,12 +69,12 @@
                             <div class="button__flex">
                                 <div class="info__button">
                                     <div>
-                                        <a href="" class="info__button_price">рассчитать стоимость</a>
+                                        <a href="#price" class="info__button_price">рассчитать стоимость</a>
                                     </div>
                                 </div>
                                 <div class="info__button">
                                     <div>
-                                        <a href="" class="info__button_call">заказать звонок</a>
+                                        <a href="#call" class="info__button_call">заказать звонок</a>
                                     </div>
                                 </div>
                             </div>
@@ -129,7 +129,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="repair">
+                    <div class="repair" id="price">
                         <div class="repair__title">
                             <p>Устраним любую неисправность</p>
                         </div>
@@ -217,10 +217,31 @@
                             </div>
                         </div>
                     </div>
-                    <div class="consultation"></div>
+                    <div class="consultation" id="call">
+                        <div class="consultation__block">
+                            <img src="img/icons/disk.png" alt="" class="consultation__img__disk">
+                            <img src="img/icons/usb.png" alt="" class="consultation__img__flash">
+                            <div class="consultation__title">
+                                <p>Нужна консультация?</p>
+                            </div>
+                            <div class="consultation__subtitle">
+                                <p>Заполните форму ниже или просто позвоните нам по телефону 8 (800) 867-78-78</p>
+                            </div>
+                            <div class="consultation__input">
+                                <input type="text" placeholder="Имя" class="consultation__input__name">
+                                <input type="tel" placeholder="8  (927) 567-88-99" class="consultation__input__phone">
+                                <div class="input__button">
+                                    <a href="" class="input__button__text">оставить заявку</a>
+                                </div>
+                            </div>
+                            <div class="consultation__conclusion">
+                                <p>Нажимая на кнопку Вы соглашаетесь с</p><a href=""  class="consultation__conclusion__privacy">политикой конфиденциальности</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="review">
+            <div class="review" id="review">
                     <div class="review__content">
                         <div class="review__title">
                             <p>У нас более 1 000 положительных отзывов</p>
@@ -240,7 +261,7 @@
                         </div>
                     </div>
             </div>
-            <div class="contacts">
+            <div class="contacts" id="contacts">
                 <div class="container">
                     <div class="contacts__content">
                         <div class="contacts__text">
@@ -267,18 +288,18 @@
         <footer class="footer">    
             <div class="footer__row">
                 <div class="image__footer">
-                    <img src="/img/icons/логотип.png" alt="">
+                    <img src="img/icons/логотип.png" alt="">
                 </div>
-                <a href="" class="footer__button">Ремонт компьютеров</a>
-                <a href="" class="footer__button">Ремонт ноутбуков</a>
-                <a href="" class="footer__button">прайс</a>
-                <a href="" class="footer__button">о частном мастере</a>
-                <a href="" class="footer__button">отзывы</a>
-                <a href="" class="footer__button">статьи</a>
-                <a href="" class="footer__button">контакты</a>
-                <a href="" class="footer__button">карта сайта</a>
+                <a href="" class="navigation__button">Ремонт компьютеров</a>
+                <a href="" class="navigation__button">Ремонт ноутбуков</a>
+                <a href="#price" class="navigation__button">прайс</a>
+                <a href="" class="navigation__button">о частном мастере</a>
+                <a href="#review" class="navigation__button">отзывы</a>
+                <a href="" class="navigation__button">статьи</a>
+                <a href="#contacts" class="navigation__button">контакты</a>
+                <a href="" class="navigation__button">карта сайта</a>
                 <div class="image__footer">
-                    <img src="/img/icons/громкость-звонка.png" alt="">
+                    <img src="img/icons/громкость-звонка.png" alt="">
                 </div>
             </div>
         </footer>
